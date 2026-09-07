@@ -37,4 +37,11 @@ export class GamesList {
   count(): number {
     return this.games.length
   }
+  toString():string{
+    let result: string = '';
+    for (let i = 0; i < this.games.length; i++) {
+      result += this.games[i].toString() + '\n';
+    }
+    return result;
+  }
 }

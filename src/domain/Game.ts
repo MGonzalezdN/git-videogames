@@ -15,6 +15,9 @@ export class Game {
   getGenre():string{
     return this.genre;
   }
+  toString():string{
+    return this.title + " " + this.year + " " + this.developer + " " + this.genre + " " + this.cover;
+  }
 }
 
 
